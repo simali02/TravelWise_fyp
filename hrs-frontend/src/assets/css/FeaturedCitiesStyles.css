@@ -1,0 +1,34 @@
+.featured-cities{
+    /* margin: 120px 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: var(--white); */
+    /* border: 1px solid var(--light-gray); */
+    /* padding: 20px; */
+    overflow: hidden !important;
+    gap: 50px;
+    width: 100%;
+}
+
+.featured-cities .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.featured-cities .cities{
+    display: grid;
+    overflow: scroll;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .featured-cities{
+        gap: 20px;
+    }
+    
+}

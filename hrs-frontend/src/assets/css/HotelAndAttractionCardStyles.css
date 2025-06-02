@@ -1,0 +1,136 @@
+.card-anchor{
+  text-decoration: inherit;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--white);
+    text-decoration: none;
+    align-self: stretch;
+    flex-basis: 1 1 320px;
+    gap: 10px;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    margin: 4px;
+    transition: .3s;
+
+    @media (max-width: 768px) {
+      flex-basis: 100%;
+    }
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+
+  
+  .card .featured-img {
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+    overflow: hidden;
+    min-height: 220px;
+    max-height: 220px;
+    height: 220px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    display: flex;
+    flex-direction: column;
+    transition: .3s;
+
+
+  }
+
+  
+  .card .featured-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    transition: .3s;
+
+  }
+  
+  .card .card-footer {
+    padding: 0 14px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;  
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 768px) {
+      font-size: 0.8em;
+    }
+    gap: 4px;
+  }
+  
+  .card .card-footer .product-title{
+    font-size: 1.8rem;
+    color: var(--text-dark);
+  }
+  
+
+  .card:hover > .featured-img{
+    filter: opacity(0.8);
+    box-shadow: none;
+
+  }
+  .card:hover .product-title{
+    text-decoration: underline;
+  }
+
+  .rating-reviews-light{
+
+  }
+  .rating-reviews-light, .rating-reviews-light span, .rating-reviews, .rating-reviews span{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    text-decoration: none !important;
+    flex-wrap: wrap;
+    text-transform: capitalize;
+  }
+
+
+  .type-badge{
+    background-color: var(--primary);
+    z-index: 1;
+    position: absolute;
+    color: var(--white);
+    padding: 8px 14px;
+    border-radius: 0.4rem;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .type-badge svg{
+    font-size: 2rem;
+  }
+
+  .favourite{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--white);
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    transition: .3s;
+
+  }
+  .favourite svg{
+    font-size: 2rem;
+  }
+  .favourite:hover{
+    background-color: var(--primary);
+    transition: .3s;
+
+  }

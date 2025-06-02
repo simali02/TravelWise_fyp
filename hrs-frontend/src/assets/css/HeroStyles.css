@@ -1,0 +1,128 @@
+.hero {
+  background: url("../images/hero-bg.jpg");
+  width: 100%;
+  min-height: 550px;
+  border: 50px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 40px 0;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid var(--light-gray);
+}
+
+.hero h1 {
+  max-width: 60%;
+  text-align: center;
+  margin: 10% 0;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero .hero-action {
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(20px);
+  /* background-color: var(--white); */
+  width: 80%;
+  bottom: -10%;
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  padding: 20px;
+  gap: 20px;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.hero .hero-action .selection-bar {
+  display: flex;
+  /* background-color: var(--white); */
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  gap: 20px;
+}
+
+.hero .hero-action .selection-bar button {
+  flex-grow: 1;
+  padding: 14px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--white);
+  border-radius: 2rem;
+  box-shadow: 2.8px 2.8px 2.2px rgb(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.hero .hero-action .selection-bar button svg{
+  font-size: 2.8rem;
+}
+
+.search-bar {
+  
+  width: 100%;
+  padding: 10px 10px 10px 20px;
+  border-radius: 16px;
+  border: 1px solid var(--light-gray);
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+}
+
+
+.search-bar input {
+  width: 100%;
+  padding: 0px;
+  border-radius: 16px;
+}
+
+.active {
+  background-color: var(--primary) !important;
+  color: var(--white) !important;
+  box-shadow: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  .hero{
+    margin: 20px 0;
+  }
+  
+    
+  }
+
+@media (max-width: 800px) {
+  .hero-action {
+    width: 90% !important;
+  }
+  .hero .hero-action .selection-bar {
+    gap: 8px;
+  }
+
+  .hero{
+    min-height: 50vh;
+  }
+  .hero h1{
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .hero .hero-action{
+    width: 94% !important;
+  }
+  .hero h1{
+    max-width: 90%;
+  }
+}

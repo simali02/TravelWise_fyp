@@ -1,0 +1,153 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid var(--light-gray);
+    padding: 30px 0;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+    /* position: sticky; */
+    /* top: 0; */
+    z-index: 5000;
+
+}
+
+nav .nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+
+nav .nav-container .group .logo{
+    width: 180px;
+    height: 80px;
+    position: relative;
+
+}
+
+nav .nav-container .group .logo img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+nav .nav-container ul{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+nav .nav-container ul li{
+    list-style:  none;
+}
+
+nav .nav-container ul li a, nav .nav-container ul li button{
+    text-decoration: none;
+    color: var(--text);
+    padding: 15px 20px;
+    border-radius: 2rem;
+}
+
+nav .nav-container ul li a, nav .nav-container ul li button:hover{
+    background-color: var(--light-gray);
+    color: var(--text-dark);
+}
+
+
+@media only screen and (max-width: 1400px) {
+    nav .nav-container{
+        width: 90%;
+    }
+    
+}
+
+
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 20px;
+
+  }
+  
+.burger svg{
+    font-size: 2.4rem;
+}
+  
+  @media screen and (max-width: 1080px) {
+    .nav-links {
+      display: none !important;
+    }
+    .nav-links.mobile {
+        display: flex !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--primary);
+        z-index: 9999;
+        flex-direction: column;
+        gap: 10px;
+        width: 100% !important;
+
+      }
+      .nav-links.mobile li{
+        width: 80%;
+      }
+      .nav-links.mobile li a, .nav-links.mobile li button{
+        font-size: 2.2rem;
+        width: 100% !important;
+        display: block;
+        text-align: center;
+        padding: 20px;
+
+
+      }
+  
+    .burger {
+      display: flex;
+      z-index: 10000;
+    }
+  
+    .ul li {
+      margin: 10px 0;
+    }
+  
+    .ul a {
+      font-size: 20px;
+    }
+
+    nav .nav-container .group .logo{
+        width: 240px;
+        height: 40px;
+        position: relative;
+    }
+    nav, .nav-container{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    nav{
+        padding: 20px 20px;
+    }
+      
+    nav .nav-container ul li a, nav .nav-container ul li button{
+          padding: 10px 18px;
+        }
+
+      
+  }
+

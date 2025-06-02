@@ -1,0 +1,67 @@
+/* Sidebar styles */
+.sidebar {
+    max-width: 320px;
+    min-width: 320px;
+    width: 320px;
+    /* height: 100vh; */
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* position: sticky; */
+    /* top: 50px; */
+    /* overflow-y: scroll; */
+    /* padding: 40px 0; */
+  }
+  
+
+  .filter-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+ 
+  
+  .filter-group select,
+  .filter-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--light-gray);
+    border-radius: 1rem;
+    font-size: 14px;
+  }
+  
+  .filter-group span {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  /* Category Buttons */
+.category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .category-button {
+    flex: 1 1 calc(33.33% - 10px);
+    padding: 10px;
+    border: 1px solid var(--light-gray);
+    border-radius: 1rem;
+    background-color: var(--white);
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .category-button.active,
+  .category-button:hover {
+    background-color: var(--primary);
+    color: var(--white);
+  }
+ 

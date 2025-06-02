@@ -1,0 +1,54 @@
+.animated-paragraph {
+  display: flex;
+  font-weight: 500;
+  color: var(--dark-text);
+  line-height: 1.8;
+  background-color: var(--light-gray);
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  width: 100%;
+  gap: 20px;
+  flex-direction: column;
+  overflow-y: scroll;
+  max-height: 300px;
+  font-size: 1.6rem;
+}
+
+.animated-paragraph .sep-explanation h4 {
+  margin: 10px 0;
+}
+
+.animated-paragraph .description-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.bullet-point {
+  margin-left: 20px;
+  color: var(--primary-color);
+  padding-left: 20px;
+  position: relative;
+  font-size: 1.6rem;
+}
+
+.bullet-point::before {
+  font-size: 2.6rem;
+  line-height: 99%;
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+}
+
+.animated-paragraph span {
+  display: inline-block;
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .animated-paragraph {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
